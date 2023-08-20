@@ -37,9 +37,11 @@ According to xx, some important factors are relevant for the mortality, such as 
 ## Folder Structure
 
 ```
+dash_app
+|-- application.py
 data
-|-- raw_data.csv
-|-- cleaned_data.csv
+|-- raw_data
+|-- processed_data
 notebooks
 |-- data_exploration.ipynb
 |-- modeling.ipynb
@@ -56,19 +58,20 @@ README.md
 requirements.txt
 .gitignore
 ```
-
+- **dash_app**: Contains the app related codes.
+  
 - **data**: Contains the raw and processed datasets used in the project.
-  - `raw_data.csv`: The original dataset before any preprocessing.
-  - `cleaned_data.csv`: The dataset after data cleaning and preprocessing.
+  - `raw_data`: The original datasets before any preprocessing.
+  - `processed_data`: The dataset after data cleaning and preprocessing.
   
 - **notebooks**: Includes Jupyter notebooks for data analysis, modeling, and visualization.
   - `data_exploration.ipynb`: Notebook exploring the dataset and visualizing key insights.
-  - `modeling.ipynb`: Notebook containing machine learning model development.
+  - `data_processing_model.ipynb`: Notebook containing feature generataion and machine learning model development.
   
-- **scripts**: Stores Python scripts for specific tasks or functions used in the project.
+- **utils**: Stores Python scripts for specific tasks or functions used in the project.
+  - `feature_preprocessing.py`: Script containing feature preprocessing functions.
   - `data_preprocessing.py`: Script containing data preprocessing functions.
-  - `model_evaluation.py`: Script for evaluating model performance.
-  
+
 - **images**: Contains images and visualizations used in the README and notebooks.
   - `plot1.png`: Image showcasing a key visualization.
   
