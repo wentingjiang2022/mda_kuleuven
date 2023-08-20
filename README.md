@@ -2,6 +2,10 @@
 
 The following resource is used to extract historical weather data from the [Open-Meteo API](https://open-meteo.com/en/docs/historical-weather-api).
 
+## Extracting List of Countries and Capitals
+
+This helps to extract a list of countries and their capitals from the provided URL: [List of Countries and Capitals](http://techslides.com/list-of-countries-and-capitals).
+
 # Data Sources from Eurostat
 
 Here are the Eurostat sources for various indicators used in the analysis:
