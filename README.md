@@ -16,6 +16,7 @@ Here are some of the key tools and libraries that were used in this project:
 ## Table of Contents
 
 - [Background](#project-title-and-description)
+- [Folder Structure](#folder)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Data](#data)
@@ -33,6 +34,33 @@ Here are some of the key tools and libraries that were used in this project:
 Heatwaves create a large impact on the society.
 According to xx, some important factors are relevant for the mortality, such as child, elder, etc.
 
+## Folder Structure
+
+Here's an overview of the folder structure of this data science project:
+- **data**: Contains the raw and processed datasets used in the project.
+  - `raw_data.csv`: The original dataset before any preprocessing.
+  - `cleaned_data.csv`: The dataset after data cleaning and preprocessing.
+  
+- **notebooks**: Includes Jupyter notebooks for data analysis, modeling, and visualization.
+  - `data_exploration.ipynb`: Notebook exploring the dataset and visualizing key insights.
+  - `modeling.ipynb`: Notebook containing machine learning model development.
+  
+- **scripts**: Stores Python scripts for specific tasks or functions used in the project.
+  - `data_preprocessing.py`: Script containing data preprocessing functions.
+  - `model_evaluation.py`: Script for evaluating model performance.
+  
+- **images**: Contains images and visualizations used in the README and notebooks.
+  - `plot1.png`: Image showcasing a key visualization.
+  
+- **docs**: Additional documentation related to the project, if applicable.
+  - `project_summary.pdf`: Project summary and key findings.
+  
+- **configs**: Configuration files or settings used in the project.
+  - `config.yaml`: Configuration settings for model hyperparameters.
+  
+- `README.md`: The main README file that provides an overview of the project.
+- `requirements.txt`: List of required Python packages for reproducing the environment.
+- `.gitignore`: Specifies files and directories to be ignored by version control.
 
 ## Installation
 
