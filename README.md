@@ -36,15 +36,11 @@ data
 notebooks
 |-- data_exploration.ipynb
 |-- modeling.ipynb
-scripts
-|-- data_preprocessing.py
-|-- model_evaluation.py
+|-- utils
 images
 |-- plot1.png
 docs
 |-- project_summary.pdf
-configs
-|-- config.yaml
 README.md
 requirements.txt
 .gitignore
@@ -68,9 +64,6 @@ requirements.txt
   
 - **docs**: Additional documentation related to the project, if applicable.
   - `project_summary.pdf`: Project summary and key findings.
-  
-- **configs**: Configuration files or settings used in the project.
-  - `config.yaml`: Configuration settings for model hyperparameters.
   
 ## Installation
 
