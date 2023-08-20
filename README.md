@@ -5,7 +5,6 @@ Brief project description.
 ## Table of Contents
 
 - [Project Title and Description](#project-title-and-description)
-- [Table of Contents](#table-of-contents)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Data](#data)
