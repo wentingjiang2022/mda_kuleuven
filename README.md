@@ -1,6 +1,10 @@
-# Data Sources for Various Indicators
+# Weather Features
 
-Here are the data sources for various indicators used in the analysis:
+The following resource is used to extract historical weather data from the [Open-Meteo API](https://open-meteo.com/en/docs/historical-weather-api).
+
+# Data Sources from Eurostat
+
+Here are the Eurostat sources for various indicators used in the analysis:
 
 - **Population**: [Eurostat - Population](https://ec.europa.eu/eurostat/databrowser/view/DEMO_PJAN/default/table?lang=en)
   - CSV File: `population.csv`
