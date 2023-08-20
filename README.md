@@ -57,6 +57,27 @@ requirements.txt
 .gitignore
 ```
 
+- **data**: Contains the raw and processed datasets used in the project.
+  - `raw_data.csv`: The original dataset before any preprocessing.
+  - `cleaned_data.csv`: The dataset after data cleaning and preprocessing.
+  
+- **notebooks**: Includes Jupyter notebooks for data analysis, modeling, and visualization.
+  - `data_exploration.ipynb`: Notebook exploring the dataset and visualizing key insights.
+  - `modeling.ipynb`: Notebook containing machine learning model development.
+  
+- **scripts**: Stores Python scripts for specific tasks or functions used in the project.
+  - `data_preprocessing.py`: Script containing data preprocessing functions.
+  - `model_evaluation.py`: Script for evaluating model performance.
+  
+- **images**: Contains images and visualizations used in the README and notebooks.
+  - `plot1.png`: Image showcasing a key visualization.
+  
+- **docs**: Additional documentation related to the project, if applicable.
+  - `project_summary.pdf`: Project summary and key findings.
+  
+- **configs**: Configuration files or settings used in the project.
+  - `config.yaml`: Configuration settings for model hyperparameters.
+  
 ## Installation
 
 Explain how to set up the project environment and install any dependencies. This might involve using a `requirements.txt` file or a `conda` environment file.
