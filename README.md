@@ -1,6 +1,8 @@
 # Project Title
 
-Brief project description.
+The goal of the project is to investigate why some countries suffer more in heatwave than others. We define the cost of the heatwave here as the total number of deaths from the heatwave. The period of investigation is from 2003 to 2023, because ...
+
+In order to utilize the various indicators from Eurostat, we narrow down the Europe region.
 
 ## Table of Contents
 
