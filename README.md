@@ -1,3 +1,9 @@
+# Main data source
+
+- Explain the time frame and the source of the key data (emdat_public_2023_08_18_query_uid-susUgT.xlsx)
+- The key features
+- One visualization from this data
+
 # Weather Features
 
 The following resource is used to extract historical weather data from the [Open-Meteo API](https://open-meteo.com/en/docs/historical-weather-api).
