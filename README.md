@@ -6,7 +6,7 @@ In order to utilize the various indicators from Eurostat, we narrow down the Eur
 
 ## Table of Contents
 
-- [Project Title and Description](#project-title-and-description)
+- [Background](#project-title-and-description)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Data](#data)
@@ -20,9 +20,11 @@ In order to utilize the various indicators from Eurostat, we narrow down the Eur
 - [Additional Documentation](#additional-documentation)
 - [Project Status](#project-status)
 
-## Project Title and Description
+## Background
 
-Briefly describe the purpose and goal of your project. This should provide an overall understanding of what the project is about.
+Heatwaves create a large impact on the society.
+According to xx, some important factors are relevant for the mortality, such as child, elder, etc.
+
 
 ## Installation
 
