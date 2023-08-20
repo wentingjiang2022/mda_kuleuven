@@ -37,6 +37,7 @@ According to xx, some important factors are relevant for the mortality, such as 
 ## Folder Structure
 Folder Structure Visualization:
 
+```
 data
 |-- raw_data.csv
 |-- cleaned_data.csv
@@ -55,7 +56,7 @@ configs
 README.md
 requirements.txt
 .gitignore
-
+```
 
 Here's an overview of the folder structure of this data science project:
 - **data**: Contains the raw and processed datasets used in the project.
