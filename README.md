@@ -54,11 +54,8 @@ requirements.txt
 - **notebooks**: Includes Jupyter notebooks for data analysis, modeling, and visualization.
   - `data_exploration.ipynb`: Notebook exploring the dataset and visualizing key insights.
   - `data_processing_model.ipynb`: Notebook containing feature generataion and machine learning model development.
+  - utils: a folder to store Python scripts for specific tasks or functions used in the project.
   
-- **utils**: Stores Python scripts for specific tasks or functions used in the project.
-  - `feature_preprocessing.py`: Script containing feature preprocessing functions.
-  - `data_preprocessing.py`: Script containing data preprocessing functions.
-
 - **images**: Contains some highlighted images in the notebooks.
   - `feature_importance.png`: Image showcasing what factors are important for the model.
   
