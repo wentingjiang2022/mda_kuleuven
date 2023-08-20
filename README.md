@@ -72,8 +72,8 @@ requirements.txt
   - `feature_preprocessing.py`: Script containing feature preprocessing functions.
   - `data_preprocessing.py`: Script containing data preprocessing functions.
 
-- **images**: Contains images and visualizations used in the README and notebooks.
-  - `plot1.png`: Image showcasing a key visualization.
+- **images**: Contains some highlighted images in the notebooks.
+  - `feature_importance.png`: Image showcasing what factors are important for the model.
   
 - **docs**: Additional documentation related to the project, if applicable.
   - `project_summary.pdf`: Project summary and key findings.
