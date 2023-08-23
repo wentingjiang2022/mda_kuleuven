@@ -9,7 +9,7 @@ In this project, a variety of tools and libraries have been utilized to facilita
 ## Table of Contents
 
 - [Background](#project-title-and-description)
-- [Folder Structure](#folder)
+- [Folder Structures](#folder)
 - [Installation](#installation)
 - [Data](#data)
   - [Heatwave](#heatwave)
