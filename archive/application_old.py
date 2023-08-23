@@ -1,9 +1,13 @@
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
+# import dash_bootstrap_components as dbc
 from dash.dependencies import Input, Output
 import plotly.express as px
 import plotly.graph_objects as go
+from flask import Flask
+
+application = Flask(__name__)
 
 # Load the Plotly 'world' dataset
 world = px.data.gapminder().query("year == 2007")
@@ -17,7 +21,8 @@ europe = ["Albania", "Austria", "Belgium", "Bosnia and Herzegovina", "Bulgaria",
 europe_data = world[world['country'].isin(europe)]
 
 # Create a Dash app
-app = dash.Dash(__name__)
+# EB looks for an 'application' callable by default.
+app = dash.Dash(__name__,server=application)#external_stylesheets=[dbc.themes.MATERIA])
 
 # Layout of the app
 app.layout = html.Div([
@@ -95,6 +100,7 @@ def update_figures(selected_country):
 
     return map_fig, bar_fig, line_fig
 
-
 if __name__ == '__main__':
-    app.run_server(debug=True, port=9008)
+#    app.run_server(debug=True, port=9004)
+    application.run()
+
