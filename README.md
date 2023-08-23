@@ -39,8 +39,6 @@ notebooks
 |-- utils
 images
 |-- plot1.png
-docs
-|-- project_summary.pdf
 README.md
 requirements.txt
 .gitignore
@@ -58,9 +56,6 @@ requirements.txt
   
 - **images**: Contains some highlighted images in the notebooks.
   - `feature_importance.png`: Image showcasing what factors are important for the model.
-  
-- **docs**: Additional documentation related to the project, if applicable.
-  - `project_summary.pdf`: Project summary and key findings.
   
 ## Installation
 
