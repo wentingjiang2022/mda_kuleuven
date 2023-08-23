@@ -25,7 +25,7 @@ In this project, a variety of tools and libraries have been utilized to facilita
 Heatwaves create a large impact on the society.
 According to xx, some important factors are relevant for the mortality, such as child, elder, etc.
 
-## Folder Structure
+## Folder Structures
 
 ```
 dash_app
