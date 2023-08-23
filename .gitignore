@@ -1,0 +1,22 @@
+# Virtual environment
+venv/
+
+# Compiled Python files
+__pycache__/
+
+# Python package information
+*.egg-info/
+
+# Compiled files
+*.pyc
+*.pyo
+*.pyd
+
+# IDE-specific files
+.vscode/
+.idea/
+*.code-workspace
+
+# System files
+.DS_Store
+Thumbs.db
