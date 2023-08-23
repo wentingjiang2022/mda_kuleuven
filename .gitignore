@@ -12,11 +12,15 @@ __pycache__/
 *.pyo
 *.pyd
 
-# IDE-specific files
-.vscode/
+# Ignore IntelliJ IDEA files and directories
 .idea/
-*.code-workspace
 
 # System files
-.DS_Store
 Thumbs.db
+.DS_Store
+
+# Ignore backup gitignore files
+.gitignore.save
+
+# Ignore other specific files or directories
+archive
