@@ -13,14 +13,15 @@ __pycache__/
 *.pyd
 
 # Ignore IntelliJ IDEA files and directories
-.idea/
+*.idea/
 
 # System files
 Thumbs.db
-.DS_Store
+*.DS_Store
 
 # Ignore backup gitignore files
 .gitignore.save
 
 # Ignore other specific files or directories
 archive
+notebooks/.ipynb_checkpoints
