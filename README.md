@@ -16,7 +16,6 @@ In this project, a variety of tools and libraries have been utilized to facilita
   - [Weather Features](#weather-features)
     - [Extracting List of Countries and Capitals](#extracting-list-of-countries-and-capitals)
   - [Eurostat Data](#eurostat-data)
-- [Results and Visualizations](#results-and-visualizations)
 - [Additional Documentation](#additional-documentation)
 - [Project Status](#project-status)
 
@@ -109,13 +108,6 @@ Here are the Eurostat sources for various indicators used in the analysis:
 
 - **Unemployment**: [Eurostat - Unemployment](https://ec.europa.eu/eurostat/databrowser/product/view/SDG_08_40)
   - CSV File: `unemployment.csv`
-
-## Results and Visualizations
-
-### Sample
-
-From the dynamic image below, we can see how the impact of heatwave changes over time.
-![Demo GIF](images/sample.gif)
 
 ## Additional Documentation
 
