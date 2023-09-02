@@ -9,11 +9,11 @@ In this project, a variety of tools and libraries have been utilized to facilita
 ## Table of Contents
 
 - [Background](#project-title-and-description)
-- [Folder Structures](#folder)
+- [Folder](#folder)
 - [Installation](#installation)
 - [Data](#data)
   - [Heatwave](#heatwave)
-  - [Weather Features](#weather-features)
+  - [Weather](#weather-features)
     - [Extracting List of Countries and Capitals](#extracting-list-of-countries-and-capitals)
   - [Eurostat Data](#eurostat-data)
 - [Additional Documentation](#additional-documentation)
@@ -24,7 +24,7 @@ In this project, a variety of tools and libraries have been utilized to facilita
 Heatwaves create a large impact on the society.
 According to [EarthData](https://www.earthdata.nasa.gov/learn/pathfinders/disasters/extreme-heat-data-pathfinder), some important factors are relevant for the mortality, such as child, elder, etc.
 
-## Folder Structures
+## Folder
 
 ```
 dash_app
