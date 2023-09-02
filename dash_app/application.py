@@ -11,11 +11,11 @@ from flask import Flask
 
 application = Flask(__name__)
 world = px.data.gapminder().query("year == 2007")
-df_world_0 = pd.read_csv('table1.csv')
-df_world = pd.read_csv('country_focus.csv')
-df_model = pd.read_csv('model_ready.csv')
-X = df_model.drop('Total Deaths', axis=1)
-y = df_model['Total Deaths']
+df_map = pd.read_csv('table1.csv')
+df_model = pd.read_csv('df_model.csv') # pd.read_csv('country_focus.csv')
+model_ready = pd.read_csv('model_ready.csv')
+X = model_ready.drop('Total Deaths', axis=1)
+y = model_ready['Total Deaths']
 
 #app = dash.Dash(__name__, suppress_callback_exceptions=True)
 app = dash.Dash(__name__,server=application)
@@ -39,13 +39,13 @@ app.layout = html.Div([
 def display_page(tab_value):
     if tab_value == 'tab-2':
         return html.Div([
-            html.H1('Select country', style={'fontSize': '1.5rem', 'marginTop': '20px'}),
+            html.H1('Select year', style={'fontSize': '1.5rem', 'marginTop': '20px'}),
             html.Div([
                 dcc.Dropdown(
-                    id='country-dropdown',
+                    id='year-dropdown',
                     options=[
-                        {'label': country, 'value': country}
-                        for country in df_world['Year'].unique()
+                        {'label': year, 'value': year}
+                        for year in [2003, 2006, 2007, 2019, 2020, 2022]
                     ],
                     value=2003,  # Default selected country
                     multi=False
@@ -70,7 +70,7 @@ def display_page(tab_value):
             dcc.Slider(
                 id='year-slider',
                 min=2003,
-                max=2023,
+                max=2022,
                 step=1,
                 value=2003,
                 marks={str(year): str(year) for year in range(2003, 2023)},
@@ -99,7 +99,7 @@ def update_world_map(selected_year, play_button_clicks, interval_intervals):
         selected_year = 2003  # Start from the beginning
 
     # Create a choropleth map using Plotly Express
-    fig = px.choropleth(df_world_0, locations='CODE', color=str(selected_year),
+    fig = px.choropleth(df_map, locations='CODE', color=str(selected_year),
                         color_continuous_scale='RdYlGn_r', template="plotly_dark",
                         title=f'Mortality during heatwave in {selected_year+1}')
 
@@ -121,12 +121,12 @@ def update_world_map(selected_year, play_button_clicks, interval_intervals):
     Output('bar-chart', 'figure'),
     Output('line-chart1', 'figure'),
     Output('line-chart2', 'figure'),
-    Input('country-dropdown', 'value')
+    Input('year-dropdown', 'value')
 )
 def update_country_charts(selected_year):
 
     # why reading from df_world instead, should use model_ready csv?
-    df_year = df_world[df_world['Year']==selected_year]
+    df_year = df_model[df_model['Year']==selected_year]
     seq_selected = df_year.Seq.unique()[0] #take first sequence
     country_impacted = df_year[df_year['Seq']==seq_selected].Country.unique()
     country_data = world[world['country'].isin(country_impacted)]
@@ -187,7 +187,7 @@ def update_country_charts(selected_year):
 
             orientation='h',
             labels={'x': 'SHAP Value', 'y': 'Feature'},
-            title=f'Feature Importance for {i}',
+            title = f'Feature Importance for {i.split("_")[1]}'
         )
 
         fig.update_layout(showlegend=False)
