@@ -22,7 +22,7 @@ In this project, a variety of tools and libraries have been utilized to facilita
 ## Background
 
 Heatwaves create a large impact on the society.
-According to xx, some important factors are relevant for the mortality, such as child, elder, etc.
+According to [EarthData](https://www.earthdata.nasa.gov/learn/pathfinders/disasters/extreme-heat-data-pathfinder), some important factors are relevant for the mortality, such as child, elder, etc.
 
 ## Folder Structures
 
@@ -58,7 +58,7 @@ requirements.txt
   
 ## Installation
 
-Explain how to set up the project environment and install any dependencies. This might involve using a `requirements.txt` file or a `conda` environment file.
+The environment can be set using a `requirements.txt` file.
 
 ## Data
 
