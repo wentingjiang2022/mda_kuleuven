@@ -34,7 +34,8 @@ data
 |-- processed_data
 notebooks
 |-- data_exploration.ipynb
-|-- modeling.ipynb
+|-- data_processing_model.ipynb
+|-- prepare_web_app_data.ipynb
 |-- utils
 images
 |-- plot1.png
@@ -51,11 +52,11 @@ requirements.txt
 - **notebooks**: Includes Jupyter notebooks for data analysis, modeling, and visualization.
   - `data_exploration.ipynb`: Notebook exploring the dataset and visualizing key insights.
   - `data_processing_model.ipynb`: Notebook containing feature generataion and machine learning model development.
-  - utils: a folder to store Python scripts for specific tasks or functions used in the project.
+  - `prepare_web_app_data.ipynb`: Notebook processing additional data to be used in the web app
+  - `utils`: a folder to store Python scripts for specific tasks or functions used in the project.
   
 - **images**: Contains some highlighted images in the notebooks.
-  - `feature_importance.png`: Image showcasing what factors are important for the model.
-  
+
 ## Installation
 
 The environment can be set using a `requirements.txt` file.
