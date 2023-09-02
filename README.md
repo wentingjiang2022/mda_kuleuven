@@ -29,6 +29,8 @@ According to [EarthData](https://www.earthdata.nasa.gov/learn/pathfinders/disast
 ```
 dash_app
 |-- application.py
+|-- random_forest_model.pkl
+|-- (CSV files for web app go here, but not listed explicitly)
 data
 |-- raw_data
 |-- processed_data
@@ -38,7 +40,7 @@ notebooks
 |-- prepare_web_app_data.ipynb
 |-- utils
 images
-|-- plot1.png
+|-- (Images from the modelling notebook go here, but not listed explicitly)
 README.md
 requirements.txt
 .gitignore
