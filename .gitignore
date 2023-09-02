@@ -1,5 +1,6 @@
 # Virtual environment
 venv/
+dash_app/app
 
 # Compiled Python files
 __pycache__/
