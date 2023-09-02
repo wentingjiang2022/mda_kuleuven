@@ -8,12 +8,12 @@ In this project, a variety of tools and libraries have been utilized to facilita
 
 ## Table of Contents
 
-- [Background](#project-title-and-description)
+- [Background](#background)
 - [Folder](#folder)
 - [Installation](#installation)
 - [Data](#data)
   - [Heatwave](#heatwave)
-  - [Weather](#weather-features)
+  - [Weather](#weather)
     - [Extracting List of Countries and Capitals](#extracting-list-of-countries-and-capitals)
   - [Eurostat Data](#eurostat-data)
 - [Additional Documentation](#additional-documentation)
