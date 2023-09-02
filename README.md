@@ -1,6 +1,6 @@
 # Explain mortality of heatwaves - A study on Europe
 
-The goal of the project is to investigate why some countries suffer more in heatwave than others. We define the cost of the heatwave here as the total number of deaths from the heatwave. The period of investigation is from 2003 to 2023, because ...
+The goal of the project is to investigate why some countries suffer more in heatwave than others. We define the cost of the heatwave here as the total number of deaths from the heatwave. The period of investigation is from 1985 to 2022 due to the availability of the disaster data.
 
 In order to utilize the various indicators from Eurostat, we narrow down the Europe region.
 
