@@ -17,8 +17,8 @@ df_model = pd.read_csv('model_ready.csv')
 X = df_model.drop('Total Deaths', axis=1)
 y = df_model['Total Deaths']
 
-app = dash.Dash(__name__, suppress_callback_exceptions=True)
-#app = dash.Dash(__name__,server=application)
+#app = dash.Dash(__name__, suppress_callback_exceptions=True)
+app = dash.Dash(__name__,server=application)
 
 app.layout = html.Div([
     dcc.Location(id='url', refresh=False),
@@ -101,7 +101,7 @@ def update_world_map(selected_year, play_button_clicks, interval_intervals):
     # Create a choropleth map using Plotly Express
     fig = px.choropleth(df_world_0, locations='CODE', color=str(selected_year),
                         color_continuous_scale='RdYlGn_r', template="plotly_dark",
-                        title=f'Mortality during heatwave in {selected_year}')
+                        title=f'Mortality during heatwave in {selected_year+1}')
 
     fig.update_layout(mapbox_style="carto-positron",
                       mapbox_zoom=1)
@@ -164,7 +164,7 @@ def update_country_charts(selected_year):
     countries = [col for col in df.columns if col.startswith('Country_')]
     df_two_countries = df.loc[index_list][countries]
     columns_with_true = [col for col in df_two_countries.columns if df_two_countries[col].any()]
-    rf_model = joblib.load('../notebooks/random_forest_model.pkl')
+    rf_model = joblib.load('random_forest_model.pkl')
     explainer = shap.Explainer(rf_model)
 
     plots = []
@@ -199,5 +199,5 @@ def update_country_charts(selected_year):
     return map_fig, bar_fig, shap1, shap2
 
 if __name__ == '__main__':
-    #application.run()
-    app.run_server(debug=True, port=9100)
+    application.run()
+    #app.run_server(debug=True, port=9100)
