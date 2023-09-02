@@ -4,8 +4,6 @@ The goal of the project is to investigate why some countries suffer more in heat
 
 In order to utilize the various indicators from Eurostat, we narrow down the Europe region.
 
-In this project, a variety of tools and libraries have been utilized to facilitate the successful execution of tasks. These tools include **Pandas** and  **NumPy** for data manipulation and analysis within the Python programming environment. Additionally, the **Matplotlib** library has been employed for visualizations. For the realm of machine learning, the project makes use of **Scikit-Learn (sklearn)** for data mining and analysis. For streamlined yet informative statistical graphics, **Seaborn** emerges as a **prominent** choice, built upon the foundations of Matplotlib. The integration of **Plotly Express** further enhances the project's visualizations by enabling the creation of interactive displays. Lastly, the **SHAP** library finds its place, introducing the capacity to interpret machine learning models.
-
 The deployed app on AWS can be accessed [here](http://test2.eu-north-1.elasticbeanstalk.com/).
 
 ## Table of Contents
