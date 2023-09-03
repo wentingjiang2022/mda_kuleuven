@@ -69,7 +69,7 @@ Three main datasets were used for the analysis, namely, Heatwave Records, Histor
 
 ### Heatwave 
 
-The heatwave information is extracted from the xx database, by filtering the range of years, geographic location, and disaster type. Some columns have incomplete information, and therefore, we limit to the most relevant columns which do not information.
+The heatwave information is extracted from the international disaster database [EM-DAT](https://www.emdat.be/), by filtering the range of years, geographic location, and disaster type. Some columns have incomplete information, and therefore, we limit to the most relevant columns which do not information.
 
 ### Weather 
 
