@@ -114,7 +114,7 @@ Here are the Eurostat sources for various indicators used in the analysis:
 
 ## Additional Documentation
 
-More detailed information about the project can be assessed from the [report](https://www.overleaf.com/4741585141rpxkgzttqrvv) and the [slide deck](https://docs.google.com/presentation/d/1sA2jl_Rk2eRyNfLJIeVu0cI9nGPfiJaITWnXJ5g3eT4/edit?usp=sharing).
+More detailed information about the project can be assessed from the [report](https://www.overleaf.com/read/rxvpzncftxkw) and the [slide deck](https://docs.google.com/presentation/d/1sA2jl_Rk2eRyNfLJIeVu0cI9nGPfiJaITWnXJ5g3eT4/edit?usp=sharing).
 
 ## Project Status
 
