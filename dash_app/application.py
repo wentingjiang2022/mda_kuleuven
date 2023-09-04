@@ -69,10 +69,10 @@ def display_page(tab_value):
             dcc.Slider(
                 id='year-slider',
                 min=2003,
-                max=2022,
+                max=2023,
                 step=1,
                 value=2003,
-                marks={str(year): str(year) for year in range(2003, 2023)},
+                marks={str(year): str(year-1) for year in range(2003, 2024)},
             ),
             html.Button('Replay', id='play-button', n_clicks=0),
             dcc.Interval(
@@ -100,7 +100,7 @@ def update_world_map(selected_year, play_button_clicks, interval_intervals):
     # Create a choropleth map using Plotly Express
     fig = px.choropleth(df_map, locations='CODE', color=str(selected_year),
                         color_continuous_scale='RdYlGn_r', template="plotly_dark",
-                        title=f'Mortality during heatwave in {selected_year+1}')
+                        title=f'Mortality during heatwave in {selected_year}')
 
     fig.update_layout(
         mapbox_style="carto-positron",
