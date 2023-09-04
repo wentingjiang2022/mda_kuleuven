@@ -4,8 +4,7 @@ The goal of the project is to investigate why some countries suffer more in heat
 
 In order to utilize the various indicators from Eurostat, we narrow down the Europe region.
 
-The deployed app on AWS can be accessed [here](
-heatwave-factors.eu-west-3.elasticbeanstalk.com).
+The deployed app on AWS can be accessed [here](http://heatwave-factors.eu-west-3.elasticbeanstalk.com/).
 
 ## Table of Contents
 
