@@ -24,15 +24,14 @@ app.layout = html.Div([
     dcc.Location(id='url', refresh=False),
     html.Div([
         html.H1('Mortality study in heatwaves', id='title',
-                style={'fontSize': '2.5rem', 'marginBottom': '20px', 'textAlign': 'center',
-                       'background': 'linear-gradient(to right, yellow, red)',
-                       'backgroundClip': 'text', 'color': 'transparent'}),
+        style={'fontSize': '2.5rem', 'marginBottom': '20px', 'textAlign': 'center',
+       'color': 'orange'}),
         dcc.Tabs(id='tabs', value='tab-1', children=[
             dcc.Tab(label='World view', value='tab-1', className='nav-link'),
             dcc.Tab(label='Mortality factors', value='tab-2', className='nav-link')
         ], style={'fontSize': '1.5rem'}),
         html.Div(id='page-content')
-    ], className='nav'), #style={'backgroundColor': 'lightyellow'}),
+    ], className='nav'),
 ])
 
 @app.callback(Output('page-content', 'children'), Input('tabs', 'value'))
@@ -103,14 +102,22 @@ def update_world_map(selected_year, play_button_clicks, interval_intervals):
                         color_continuous_scale='RdYlGn_r', template="plotly_dark",
                         title=f'Mortality during heatwave in {selected_year+1}')
 
-    fig.update_layout(mapbox_style="carto-positron",
-                      mapbox_zoom=1)
-
-    # Adjust the margin and add space between the title and top margin
-    fig.update_layout(title_x=0.5, margin={"r": 0, "t": 100, "l": 0, "b": 0})
+    fig.update_layout(
+        mapbox_style="carto-positron",
+        mapbox_zoom=1,
+        title_x=0.5,
+        margin={"r": 0, "t": 80, "l": 0, "b": 0},
+        paper_bgcolor='darkblue',
+        font_color='white',
+    )
     fig.update_coloraxes(colorbar_title="")
 
     fig.update_geos(showframe=False)
+    fig.update_geos(
+        projection_type='mercator',
+        showland=True,
+        landcolor='white',
+        bgcolor='darkblue')
 
     new_year = selected_year + 1 if selected_year < 2022 else 2003
 
@@ -125,7 +132,6 @@ def update_world_map(selected_year, play_button_clicks, interval_intervals):
 )
 def update_country_charts(selected_year):
 
-    # why reading from df_world instead, should use model_ready csv?
     df_year = df_model[df_model['Year']==selected_year]
     seq_selected = df_year.Seq.unique()[0] #take first sequence
     country_impacted = df_year[df_year['Seq']==seq_selected].Country.unique()
@@ -176,15 +182,14 @@ def update_country_charts(selected_year):
         sorted_feature_names = [feature_names[i] for i in sorted_indices]
         sorted_shap_values = [shap_values[i] for i in sorted_indices]
 
-        colors = ['green' if value < 0 else 'red' for value in sorted_shap_values]
-        color_mapping = {'green': 'green', 'red': 'red'}
+        colors = ['lightgreen' if shap_value < 0 else 'lightcoral' for shap_value in sorted_shap_values]
+        color_mapping = {'green': 'lightgreen', 'red': 'lightcoral'}
 
         fig = px.bar(
             x=sorted_shap_values,
             y=sorted_feature_names,
             color=colors,
             color_discrete_map=color_mapping,  # Explicitly set color mapping
-
             orientation='h',
             labels={'x': 'SHAP Value', 'y': 'Feature'},
             title = f'Feature Importance for {i.split("_")[1]}'
